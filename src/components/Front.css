@@ -18,7 +18,8 @@
   
   }
   .bigdiv{
-    background: #416e9b;
+    /* background: #416e9b; */
+    background-color: rgb(245, 243, 235);
       margin-bottom: 30px;
       padding-bottom: 20px;
       border-bottom : 2px solid #133783
@@ -58,6 +59,7 @@
  .content-2{
    float: right;
   margin-top: 9px;
+  margin-right: 10px;
  }
  .account{
   margin-left: 30px;
@@ -77,6 +79,7 @@
    margin-bottom: -25px;
  }
 
- .label-1{
+ .agree{
    margin-left: 10px;
+   color: lightslategray;
  }
