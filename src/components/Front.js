@@ -68,73 +68,60 @@ class Front extends Component {
         return(
             <div className="App">
             <div className="bigdiv">
-            <header >
+            <header>
             <div>
                 <img className="img-logo" 
                 alt="logo"
                 src=" https://cdn.worldvectorlogo.com/logos/facebook-5.svg">
                 </img> 
           
-            <div className="head">
+                <div className="head">
+                
+                    <Form onSubmit = {this.handleSubmit}>
+                       <Form.Row className="align-items-center">
             
-            <Form onSubmit = {this.handleSubmit}>
-        <Form.Row className="align-items-center">
-      
-          <Col sm={5} className="my-1" >
-            {/* <Form.Label>
-              Email
-            </Form.Label> */}
-      
-            <Form.Control 
-            required
-            name="email"
-            type="email"
-            placeholder="Enter Email"
-            value={this.state.email}
-            onChange={this.handleInputChange}
-             />
-          </Col>
-      
-          <Col sm={5} className="my-1" >
-            {/* <Form.Label>
-              Password
-            </Form.Label> */}
-      
-            <Form.Control 
-            required
-            name="password"
-            type="password"
-            placeholder="Enter Password"
-            value={this.state.password}
-            onChange={this.handleInputChange}
-             />
-      
-          </Col>
-      
-          
-          <Col xs="2" className="my-1">
+                        <Col sm={5} className="my-1" >
+                                <Form.Control 
+                                required
+                                name="email"
+                                type="email"
+                                placeholder="Enter Email"
+                                value={this.state.email}
+                                onChange={this.handleInputChange}
+                                />
+                        </Col>
             
-            <Button type="submit">Login</Button>
-          </Col>
-        </Form.Row>
+                            <Col sm={5} className="my-1" >
+                                <Form.Control 
+                                required
+                                name="password"
+                                type="password"
+                                placeholder="Enter Password"
+                                value={this.state.password}
+                                onChange={this.handleInputChange}
+                                />
+                        </Col>
+
+                        <Col xs="2" className="my-1">
+                           <Button type="submit">Login</Button>
+                        </Col>
+                       </Form.Row>
+                
+                    </Form>
+                   <Link to ="/Register">
+                       <p className="link"> Don't have an Account ? Sign Up</p>
+                    </Link>
         
-      </Form>
-      <Link to ="/Register">
-                         <p className="link"> Don't have an Account ? Sign Up</p>
-                        </Link>
-      
-          </div>
-          
-          </div>
-          
-          </header>          
-          </div>
-        
+                </div>   
+            </div> 
+           </header>          
+        </div>
+            
           {/* CONTENT AND CREATE ACCOUNT */}
 
           <div className="content clearfix">
               <div className = "content-1">
-              <p className="text-p">Facebook helps you to share and conncect with your friends</p>
+                <p className="text-p">Facebook helps you to share and conncect with your friends</p>
 
                 <img src={connect} className="connect-img" alt="logo"/>
                </div>
@@ -146,7 +133,7 @@ class Front extends Component {
                         <Form onSubmit = {this.handleSubmit}>
                         <Form.Row>
                             <Form.Group as={Col} md="6" controlId="validationCustom01">
-                            <Form.Label>First name</Form.Label>
+                           <label className="label">First Name</label>
                             <Form.Control 
                             required 
                             type="text" 
@@ -161,7 +148,7 @@ class Front extends Component {
                             </Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group as={Col} md="6" controlId="validationCustom02">
-                            <Form.Label>Last name</Form.Label>
+                            <label className="label">Last name</label>
                             <Form.Control 
                                 required 
                                 type="text" 
@@ -177,7 +164,7 @@ class Front extends Component {
                         </Form.Row>
                         <Form.Row>
                             <Form.Group as={Col} md="6" controlId="validationCustom01">
-                            <Form.Label>Email Address</Form.Label>
+                            <label className="label">Email Address</label>
                             <Form.Control 
                             required
                             name="email"
@@ -192,7 +179,7 @@ class Front extends Component {
                             </Form.Group>
 
                             <Form.Group as={Col} md="6" controlId="validationCustom03">
-                            <Form.Label>Password</Form.Label>
+                            <label className="label">Password</label>
                             <Form.Control
                                 required 
                                 name="password"
@@ -206,22 +193,24 @@ class Front extends Component {
                             </Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group as={Col} md="6" controlId="formGridState">
-                            <Form.Label>Gender</Form.Label>
+                            <label className="label">Gender</label>
                             <Form.Control as="select" defaultValue="Choose...">
                                 <option>Male</option>
                                 <option>Female</option>
                                 <Form.Control.Feedback type="invalid">
-                                Please provide a valid city.
+                                
                                 </Form.Control.Feedback>
                             </Form.Control>
                             </Form.Group>
                         </Form.Row>
                         <Form.Group>
-                            <Form.Check
-                            required
-                            label="Agree to terms and conditions"
-                            feedback="You must agree before submitting."
-                            />
+                        
+                        <input type="checkbox" required feedback="You must agree before submitting." /> 
+                        <label className="label-1">Agree to terma and conditions </label>
+  
+
+                            
+                            
                         </Form.Group>
 
                         <Button type="submit">SignUp</Button>

@@ -42,7 +42,7 @@
  .text-p{
    margin-top: 6px;
    margin-left: 30px;
-   color: #0e385f;
+   color: black;
  }
  .link{
    color: black;
@@ -65,4 +65,18 @@
   margin-top:  20px;
   padding-top: 10px ;
   
+ }
+ .label{
+  /* color:#007BFF; */
+  color: black;
+  color: lightslategray;
+
+ }
+
+ .xx{
+   margin-bottom: -25px;
+ }
+
+ .label-1{
+   margin-left: 10px;
  }
