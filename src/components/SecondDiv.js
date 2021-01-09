@@ -1,8 +1,7 @@
 import React, {Component } from "react"
 // Add the Firebase services that you want to use
 import firebase from 'firebase/app';
-import { hashHistory } from 'react-router-dom'
-import { withRouter } from 'react-router';
+
 
 import "firebase/auth";
 import "firebase/firestore";

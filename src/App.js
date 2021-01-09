@@ -2,14 +2,12 @@ import React from "react";
 import './App.css';
 import {HashRouter as Router, Route, Switch} from "react-router-dom";
 import Darkmode from "darkmode-js";
-import { hashHistory } from 'react-router-dom';
-import { withRouter } from 'react-router';
+
 
 import home from "./components/Home"
 import Register from "./components/Register"
 import Login from "./components/Login"
 import Front from "./components/Front"
-import SecondDiv from "./components/SecondDiv"
 
 
 

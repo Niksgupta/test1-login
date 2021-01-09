@@ -6,11 +6,9 @@ import '../App.css';
 import "./Front.css"
 import {Form, Col, Button} from "react-bootstrap"
 import {Link} from "react-router-dom";
-import { hashHistory } from 'react-router-dom'
-import { withRouter } from 'react-router';
+
 
 import {auth} from "./firebase"
-import connect from "../assets/connect.jpg"
 import SecondDiv from "./SecondDiv";
 
 class Front extends Component {
