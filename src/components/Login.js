@@ -56,7 +56,7 @@ handleSubmit(event){
     ){
         alert("Please check your credentials again");
     } else if (
-        e.message === "There is no user record correspounding to this identifier. The user may have been deleted"
+        e.message === "There is no user record correspounding to this identifier."
     ) {
         alert("Please check your credentials again");
     } else{
