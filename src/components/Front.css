@@ -36,7 +36,7 @@
   }
 
  .content-1{
-   margin-top: 20px;
+   margin-top: 7px;
  }
  .text-p{
    margin-top: 6px;
@@ -50,6 +50,18 @@
    font-weight: bold;
  }
  .connect-img{
-  width: 260px;
+  width: 280px;
   margin-left: 30px;
+ }
+
+ .content-2{
+  margin-top: 7px;
+  padding-top: 14px;
+ }
+ .account{
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-top:  20px;
+  padding-top: 10px ;
+  
  }

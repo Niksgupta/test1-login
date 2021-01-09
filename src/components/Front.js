@@ -139,12 +139,95 @@ class Front extends Component {
                 <img src={connect} className="connect-img" alt="logo"/>
                    
                 <div className = "content-2">
-                  <h2>Create an Account</h2>
+                  <h2 className="text-p">Create an Account</h2>
                     <p className="text-p">It's quick and easy!!</p>
-                     <div account>
-                         <form>
-                             
-                         </form>
+                     <div className="account">
+                     <Form onSubmit = {this.handleSubmit}>
+          <Form.Row>
+            <Form.Group as={Col} md="6" controlId="validationCustom01">
+              <Form.Label>First name</Form.Label>
+              <Form.Control 
+              required 
+              type="text" 
+              // id="firstname"
+              name="firstname"
+              value={this.state.firstname}
+              onChange={this.handleInputChange}
+              placeholder="First name" />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                Please provide a valid email.
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="6" controlId="validationCustom02">
+              <Form.Label>Last name</Form.Label>
+              <Form.Control 
+                required 
+                type="text" 
+                name="lastname"
+                value={this.state.lastname}
+                onChange={this.handleInputChange}
+                placeholder="Last name" />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                Please provide a valid email.
+              </Form.Control.Feedback>
+            </Form.Group>
+          </Form.Row>
+          <Form.Row>
+            <Form.Group as={Col} md="6" controlId="validationCustom01">
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control 
+              required
+              name="email"
+              value={this.state.email}
+              onChange={this.handleInputChange}
+              type="email" 
+              placeholder="Email Address" />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+              <Form.Control.Feedback type="invalid">
+                Please provide a valid email.
+              </Form.Control.Feedback>
+            </Form.Group>
+
+            <Form.Group as={Col} md="6" controlId="validationCustom03">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                required 
+                name="password"
+                value={this.state.password}
+                onChange={this.handleInputChange}
+                type="password"
+                placeholder="Set Password"
+              />
+              <Form.Control.Feedback type="invalid">
+                Please provide a valid Password.
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} md="6" controlId="formGridState">
+              <Form.Label>Gender</Form.Label>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Male</option>
+                <option>Female</option>
+                <Form.Control.Feedback type="invalid">
+                  Please provide a valid city.
+                </Form.Control.Feedback>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+          <Form.Group>
+            <Form.Check
+              required
+              label="Agree to terms and conditions"
+              feedback="You must agree before submitting."
+            />
+          </Form.Group>
+
+          <Button type="submit">SignUp</Button>
+          <Link to ="/Login">
+                         <h6 className="bottom">Already have an Account ? Log In</h6>
+                        </Link>
+        </Form>
                      </div>
 
               </div>  
