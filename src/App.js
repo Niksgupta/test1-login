@@ -1,7 +1,6 @@
-import React, {Component, useHistory} from "react";
+import React from "react";
 import './App.css';
 import {HashRouter as Router, Route, Switch} from "react-router-dom";
-import {Link } from "react-router-dom";
 
 import home from "./components/Home"
 import Register from "./components/Register"

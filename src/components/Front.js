@@ -1,5 +1,4 @@
 import React, {Component } from "react"
-import firebase from 'firebase/app';
 // Add the Firebase services that you want to use
 import "firebase/auth";
 import "firebase/firestore";
@@ -8,10 +7,7 @@ import "./Front.css"
 import {Form, Col, Button} from "react-bootstrap"
 import {Link} from "react-router-dom";
 
-import home from "./Home"
-import Register from "./Register"
-import {auth, db} from "./firebase"
-import fblogo from "../assets/fbb.jpg"
+import {auth} from "./firebase"
 import connect from "../assets/connect.jpg"
 
 class Front extends Component {
@@ -140,7 +136,7 @@ class Front extends Component {
               <div className = "content-1">
               <p className="text-p">Facebook helps you to share and conncect with your friends</p>
 
-                <img src={connect} className="connect-img"/>
+                <img src={connect} className="connect-img" alt="logo"/>
                    
                 <div className = "content-2">
                   <h2>Create an Account</h2>

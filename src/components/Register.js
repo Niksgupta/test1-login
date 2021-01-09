@@ -1,4 +1,4 @@
-import React, {Component, useHistory} from "react";
+import React, {Component} from "react";
 import firebase from 'firebase/app';
 // Add the Firebase services that you want to use
 import "firebase/auth";
@@ -6,10 +6,10 @@ import "firebase/firestore";
 import '../App.css';
 import {Form, Col, Button} from "react-bootstrap"
 import {Link} from "react-router-dom";
-import Login from "./Login"
+// import Login from "./Login"
 
-import home from "./Home"
-import {auth, db} from "./firebase"
+// import home from "./Home"
+// import {auth, db} from "./firebase"
 
 
 class Register extends Component{

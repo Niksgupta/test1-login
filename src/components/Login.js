@@ -1,15 +1,12 @@
-import React, {Component, useHistory} from "react";
-import firebase from 'firebase/app';
+import React, {Component} from "react";
 // Add the Firebase services that you want to use
 import "firebase/auth";
 import "firebase/firestore";
 import '../App.css';
 import {Form, Col, Button} from "react-bootstrap"
 import {Link} from "react-router-dom";
-
-import home from "./Home"
-import Register from "./Register"
-import {auth, db} from "./firebase"
+// import Register from "./Register"
+import {auth} from "./firebase"
 
 
 class Login extends Component{
