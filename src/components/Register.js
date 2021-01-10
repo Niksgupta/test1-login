@@ -75,21 +75,19 @@ handleSubmit(event){
     return(
       <div className="App">
       <div className="register-heading">
-        <center>
           
           <img
             className="imglogo"
             src="https://cdn.worldvectorlogo.com/logos/facebook-5.svg"
             alt ="logo"
           />
-        </center>
       </div>
      
       <div className="first">
         <Form onSubmit = {this.handleSubmit}>
           <Form.Row>
             <Form.Group as={Col} md="6" controlId="validationCustom01">
-              <Form.Label>First name</Form.Label>
+            <label className="label">First Name</label>
               <Form.Control 
               required 
               type="text" 
@@ -104,7 +102,7 @@ handleSubmit(event){
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="6" controlId="validationCustom02">
-              <Form.Label>Last name</Form.Label>
+            <label className="label">Last Name</label>
               <Form.Control 
                 required 
                 type="text" 
@@ -120,7 +118,7 @@ handleSubmit(event){
           </Form.Row>
           <Form.Row>
             <Form.Group as={Col} md="6" controlId="validationCustom01">
-              <Form.Label>Email Address</Form.Label>
+            <label className="label">Email Address</label>
               <Form.Control 
               required
               name="email"
@@ -135,7 +133,7 @@ handleSubmit(event){
             </Form.Group>
 
             <Form.Group as={Col} md="6" controlId="validationCustom03">
-              <Form.Label>Password</Form.Label>
+            <label className="label">Password</label>
               <Form.Control
                 required 
                 name="password"
@@ -149,7 +147,7 @@ handleSubmit(event){
               </Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="6" controlId="formGridState">
-              <Form.Label>Gender</Form.Label>
+            <label className="label">Gender</label>
               <Form.Control as="select" defaultValue="Choose...">
                 <option>Male</option>
                 <option>Female</option>
@@ -160,11 +158,8 @@ handleSubmit(event){
             </Form.Group>
           </Form.Row>
           <Form.Group>
-            <Form.Check
-              required
-              label="Agree to terms and conditions"
-              feedback="You must agree before submitting."
-            />
+              <input type="checkbox" required feedback="You must agree before submitting." /> 
+              <label className="agree">Agree to terms and conditions </label>
           </Form.Group>
 
           <Button type="submit">SignUp</Button>

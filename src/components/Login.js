@@ -69,22 +69,19 @@ handleSubmit(event){
   render(){
     return(
       <div className="App">
-      <div>
-        <center>
-          
+      <div className= "register-heading">          
           <img
             className="imglogo"
             src="https://cdn.worldvectorlogo.com/logos/facebook-5.svg"
             alt ="logo"
           />
-        </center>
       </div>
       <div className="first">
         <Form onSubmit = {this.handleSubmit}>
     
           <Form.Row>
             <Form.Group as={Col} md="6" controlId="validationCustom01">
-              <Form.Label>Email Address</Form.Label>
+            <label className="label">First Name</label>
               <Form.Control 
               required
               name="email"
@@ -99,7 +96,7 @@ handleSubmit(event){
             </Form.Group>
 
             <Form.Group as={Col} md="6" controlId="validationCustom03">
-              <Form.Label>Password</Form.Label>
+            <label className="label">First Name</label>
               <Form.Control
                 required 
                 name="password"
@@ -115,11 +112,8 @@ handleSubmit(event){
             
           </Form.Row>
           <Form.Group>
-            <Form.Check
-              required
-              label="Agree to terms and conditions"
-              feedback="You must agree before submitting."
-            />
+                <input type="checkbox" required feedback="You must agree before submitting." /> 
+                <label className="agree">Agree to terms and conditions </label>
           </Form.Group>
 
           <Button type="submit">Log In</Button>
